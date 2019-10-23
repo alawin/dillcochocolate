@@ -1,0 +1,51 @@
+
+::selection {
+  background:rgba(73, 48, 2, 0.288);
+  Color: chocolate;
+}
+
+
+
+@font-face {
+  font-family: "Geomanist";
+  src: url("Fonts/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Webfont/geomanist-regular-webfont.eot");
+  src: url("Fonts/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Webfont/geomanist-regular-webfont.woff") format("woff"), url("Fonts/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Webfont/geomanist-regular-webfont.woff2") format("woff2"),url("Fonts/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Webfont/geomanist-regular-webfont.ttf") format("truetype"), url("Fonts/Geomanist-Regular&Italic/Webfont/Geomanist-Regular-Webfont/geomanist-regular-webfont.svg") format("svg");
+}
+
+@font-face{
+  font-family: "Futura";
+  src: url("Fonts/futura/Futura Book font.ttf") format('truetype');
+}
+
+body, html {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  font-size: calc(((16px + 1vw)/2) - 0.1vw);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+}
+.App {
+  z-index: 1;
+  overflow-x: hidden;
+}
+.root {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 30rem) {
+  body, html  {
+    font-size: 1rem;
+    font-family: 'Geomanist';
+    letter-spacing: 0.1rem;
+  }
+}

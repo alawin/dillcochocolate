@@ -1,0 +1,79 @@
+.follow-us {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10vw;
+    left: 0;
+    margin-left: 1.75rem;
+    z-index: 101;
+}
+
+.follow-us ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 4rem;
+    padding: 0;
+}
+
+
+.follow-us a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 1rem .1rem;
+    padding: 0 .1rem;
+    background: transparent;
+    letter-spacing: .1rem;
+    text-shadow: 0 2px 7px black;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-family: Geomanist;
+}
+.follow-us a svg {
+    margin-top: .35rem;
+    text-shadow: 2px 2px 1px black;
+}
+
+.follow-us a:hover {
+    font-size: 1.5rem;
+    color: rgb(238, 179, 90);
+}
+
+.follow-us .follow {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin: 0 1rem;
+    text-shadow: 2px 2px 1px black;
+}
+
+@media (max-width: 30rem) {
+    .follow-us{
+        position: fixed;
+        bottom: 10vw;
+        left: 0;
+        margin-left: 1rem;
+        z-index: 101;
+    }
+    .follow-us .follow {
+        font-size: 1rem;
+    }
+}
+@media (max-height: 30rem) {
+    .follow-us{
+        position: fixed;
+        bottom: 1vw;
+        left: 0;
+        margin-left: 1.5rem;
+        z-index: 101;
+    }
+    .follow-us .follow {
+        font-size: 1rem;
+    }
+}

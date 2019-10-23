@@ -1,0 +1,37 @@
+.right-duocolumn__children .map {
+    filter:  grayscale(100%) invert(90%);
+    transition: opacity 0.2s ease;
+    pointer-events: all;
+}
+
+.right-duocolumn__children:hover {
+    transition: all 0.2s ease-in-out;
+    border: .1rem solid rgba(255, 255, 255, 0.685);
+
+}
+
+.right-duocolumn__children:hover .maptext {
+    color: white;
+    transition: all 0.4s ease-in-out;
+    z-index: 5;
+    pointer-events: none;
+}
+.right-duocolumn__children .maptext {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: transparent;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+.right-duocolumn__children:hover map {
+    z-index: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 30rem) {
+    .duocolumn-wrapper .map {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}

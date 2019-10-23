@@ -1,0 +1,74 @@
+.minibox {
+    padding: 0rem 1rem ;
+    position: relative;
+    height: 22.5vh;
+    width: 10vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh 1rem;
+}
+.minibox .image-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.minibox .image-box img{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.minibox .texta {
+    color: white;
+    padding: 0;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    justify-self: flex-end;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.minibox .textb {
+    padding:0;
+    color: white;
+    width:15rem;
+    letter-spacing: .05rem;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    justify-self: flex-end;
+    position: absolute;
+    bottom: 0rem;
+}
+
+@media screen and (max-width: 30rem) {
+    .minibox .image-box img{
+    transform: scale(5);
+    margin-bottom: 4rem;
+    }
+}
+@media screen and (min-width: 31rem) {
+    .minibox .image-box img{
+    transform: scale(2.75);
+    margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 60rem) {
+    .minibox .image-box img{
+    transform: scale(1);
+    margin-bottom: 2rem;
+    }
+}
+
+@media (max-height: 30rem) {
+    .minibox .image-box img{
+        transform: scale(2);
+        margin-bottom: 7rem;
+    }
+}

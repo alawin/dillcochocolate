@@ -1,0 +1,138 @@
+.product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 50vw;
+    position: relative;
+    margin: 2rem 0 2rem 8vw;
+    color: white;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.product-card .product-card-image {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-card .product-card-image img {
+    width: auto;
+    height: 17rem;
+    transition: all .3s ease-in-out;
+}
+.product-card:hover {
+    box-shadow: 0px 2px 10px rgb(31, 31, 31);
+    text-shadow: 2px 2px 4px black;
+    transition: all .3s ease-in-out;
+    transform: scale(1.03);
+}
+.product-card:hover .product-card-image img {
+    transform: scale(1.9);
+    transition: all .3s ease-in-out;
+    opacity: .9;
+}
+.product-card .product-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex: 1;
+    height: auto;
+}
+
+.product-card .product-card-content .product-card-titlewrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1;
+}
+
+.product-card .product-card-content .product-card-titlewrapper .product-card-title__top {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
+}
+.product-card .product-card-content .product-card-titlewrapper .product-card-title__bottom {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
+    font-family: 'Geomanist';
+}
+
+.product-card .product-card-content .product-card-text {
+    text-align: left;
+    font-family: 'Geomanist';
+    font-weight: lighter;
+    letter-spacing: .01rem;
+    width: 90%;
+    opacity: .9;
+    align-self: flex-start;
+}
+
+.product-card .product-card-content .product-card-details {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    font-family: 'Geomanist';
+    opacity: .9;
+}
+
+.product-card .product-card-content .product-card-details .product-card-details__grams{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.product-card .product-card-content .product-card-details .product-card-details__grams .product-card-details__grams-items {
+    padding-left: 3rem;
+    margin-left: 3rem;
+    border-left: .1rem solid white;
+}
+
+.product-card .product-card-bgart {
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    opacity: 0.7;
+    transform: translate(4rem, 2rem);
+    transition: all .3s ease-in-out;
+}
+.product-card:hover .product-card-bgart {
+    transform: none;
+    opacity: .2;
+    transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 60rem) {
+    .product-card {
+        width: 90vw;
+        margin: 3rem auto;
+        flex-direction: column;
+    }
+    .product-card .product-card-content .product-card-text {
+        width: 90%;
+        text-align: justify;
+    }
+    .product-card .product-card-bgart {
+        transform: translate(8rem, 4rem);
+    }
+}
+@media screen and (max-height: 30rem) {
+    .product-card {
+        width: 90vw;
+        margin: 3rem auto;
+        flex-direction: column;
+    }
+    .product-card .product-card-image {
+        align-self: flex-start;
+    }
+    .product-card .product-card-image img {
+        height: 20rem;
+    }
+}

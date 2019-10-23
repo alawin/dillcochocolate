@@ -1,0 +1,66 @@
+.question-card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+.question-card-tag {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Geomanist;
+    font-size: 1.25rem;
+    margin: 1rem 8vw;
+    margin-top: 3rem;
+    text-shadow: 2px 2px 7px black;
+    width: auto;
+}
+
+.question-card-text {
+    text-shadow: 2px 2px 1px black;
+    width: 25rem;
+    margin: 1rem 8vw 3rem 8vw;
+    letter-spacing: 0.05rem;
+    font-size: 1.15rem;
+}
+
+@media screen and (max-width: 60rem) {
+    .question-card {
+        width: auto;
+        padding: 0 1rem;
+    }
+    .question-card-tag {
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .question-card-text {
+        width: 100%;
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 4rem;
+        opacity: 0.75;
+        font-size: .9rem;
+    }
+}
+
+@media (max-height: 30rem) {
+    .question-card-tag {
+        width: auto;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+        letter-spacing: .05rem;
+        margin: 1rem 5rem;
+    }
+    .question-card-text {
+        width: auto;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+        letter-spacing: .05rem;
+        margin: 1rem 5rem 4rem 5rem;
+    }
+}
+

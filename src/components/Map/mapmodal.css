@@ -1,0 +1,162 @@
+.map {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-wrapper {
+    width: auto;
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.01s ease-in-out;
+}
+
+.map-wrapper.open {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.map-wrapper.open .map {
+    transform: none;
+}
+.map-wrapper .map img{
+    width: auto;
+    height: 87.5vh;
+    pointer-events: none;
+}
+.map-wrapper.open .map img{
+    width: auto;
+    height: 87.5vh;
+    pointer-events: none;
+}
+
+.map-wrapper .close-map-button {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: initial;
+    cursor: pointer;
+}
+
+.map-wrapper.open .close-map-button {
+    color: white;
+    font-size: 1rem;
+    position: fixed;
+    top: 0;
+    right: 50%;
+    transform: translateX(49vw);
+    opacity: 1;
+}
+.map-wrapper.open .close-map-button svg {
+    color: transparent;
+    stroke-width: 20;
+    stroke: white;
+    transition: all 0.3s ease-in-out;
+}
+.map-wrapper.open .close-map-button:hover svg {
+    stroke-width: 20;
+    stroke: rgb(77, 77, 77);
+    fill: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.map-wrapper .close-map-button svg {
+    padding: .3rem;
+    font-size: 2.3rem;
+    fill: rgb(238, 179, 90);
+    stroke: chocolate;
+    stroke-width: 20;
+}
+.map-wrapper .marker {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(77.5%, -40%);
+    color: chocolate;
+    font-size: 2rem;
+    pointer-events: none;
+}
+.map-wrapper.open .marker {
+    padding: .3rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(5%, -55%);
+    color: chocolate;
+    font-size: 3rem;
+    transition: all .3s ease-in-out;
+    pointer-events: initial;
+}
+
+.map-wrapper.open .marker svg {
+    stroke: rgb(0, 0, 0);
+    stroke-width: 10;
+    stroke-linejoin: miter;
+    stroke-linecap: miter;
+    stroke-miterlimit: 8;
+}
+.map-wrapper.open .marker:hover {
+    color: rgb(255, 255, 255);
+}
+
+.map-wrapper.open .location-text {
+    position: absolute;
+    top: 10%;
+    left: 95%;
+    color: rgb(238, 179, 90);
+    font-size: .8rem;
+    font-weight: 900;
+    opacity: 1;
+    pointer-events: initial;
+}
+.map-wrapper .location-text {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 30rem) {
+    .map-wrapper.open .close-map-button {
+        color: white;
+        font-size: 1rem;
+    }
+    .map-wrapper.open {
+        margin-top: 5rem;
+    }
+    .map-wrapper .marker {
+        transform: translate(75%, -30%);
+    }
+    .map-wrapper.open .marker {
+        transform: translate(2vw, -12vw);
+    }
+}
+
+@media screen and (max-height: 30rem) {
+    .map-wrapper .marker {
+        transform: translate(75%, -30%);
+    }
+    .map-wrapper.open .marker {
+        transform: translate(1.5vw, -4vw);
+    }
+}
+
+
+@media screen and (min-width: 60rem) {
+    .map-wrapper.open .close-map-button {
+        color: white;
+        font-size: 1rem;
+        position: absolute;
+        transform: none;
+        top: 1rem;
+        right: 1rem;
+        opacity: 1;
+    }
+}

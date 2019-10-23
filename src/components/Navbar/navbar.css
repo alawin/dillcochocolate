@@ -1,0 +1,206 @@
+.navbar {
+    height: 7rem;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 98;
+    transition: all .3s ease-in-out;
+}
+.navbar.false {
+    height: 2rem;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 98;
+    padding-bottom: 1rem;
+    backdrop-filter: blur(.1rem);
+    background: rgba(0, 0, 0, 0.479);
+    transition: all .3s ease-in-out;
+}
+
+
+.navbar img.logo {
+    height: 5.8rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in-out;
+}
+.navbar.false img.logo {
+    height: 2.2rem;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    transition: all .3s ease-in-out;
+}
+.navbar-logo {
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    margin: 2rem 2rem 2rem 5vw;
+}
+.navbar-logo a {
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 2px 7px black;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+.navbar-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 1rem 2rem 0 3rem;
+}
+.navbar-items li {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-items ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding-left: 5vw;
+    width: 86%;
+}
+
+.navbar-items a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.11rem;
+    font-weight: 400;
+    font-family: 'Geomanist';
+    margin: 0 1rem;
+    padding: .4rem 0.7rem .4rem 0.7rem;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    background: transparent;
+    border: .1rem solid transparent;
+    letter-spacing: .15rem;
+    text-shadow: 2px 2px 1px black;
+    cursor: pointer;
+    position: relative;
+}
+.navbar-items a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: .1rem;
+    background: rgb(238, 179, 90);
+    transition-delay: 0.4s !important;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.navbar-items a:hover {
+    color: rgb(238, 179, 90);
+    transition: all .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar-items a.active {
+    color: rgb(238, 179, 90);
+    transition-delay: 0.2s !important;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+}
+.navbar-items a.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: .1rem;
+    background: rgb(238, 179, 90);
+    transition-delay: 0.4s !important;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.navbar-items2 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: 5vw;
+}
+
+.navbar-items2 ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+
+.navbar-items2 a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin: 1rem .1rem;
+    padding: 0 .1rem;
+    background: transparent;
+    text-shadow: 0 2px 7px black;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.navbar-items2 a svg {
+    margin-top: .35rem;
+    margin-left: .5rem;
+    text-shadow: 2px 2px 1px rgb(14, 14, 14);
+    stroke: rgb(204, 204, 204);
+    stroke-width: 15;
+}
+
+.navbar-items2 a:hover {
+    font-size: 1.5rem;
+    color: rgb(238, 179, 90);
+}
+.navbar-items2 a:hover svg {
+    stroke: rgb(238, 179, 90);
+}
+
+
+.navbar-items2 .follow {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.11rem;
+    font-weight: 200;
+    margin: 0 1rem;
+    letter-spacing: .1rem;
+    text-shadow: 2px 2px 1px black;
+}
+
+@media (max-width: 75rem) {
+    .navbar-items{
+        display: none;
+    }
+    .navbar-items2{
+        display: none;
+    }
+    .navbar-logo {
+        width: 100vw;
+        justify-content: flex-end;
+    }
+}

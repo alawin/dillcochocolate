@@ -1,0 +1,202 @@
+.duocolumn-wrapper {
+    width: 100%;
+    height: calc(100vh + 6rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.duocolumn-wrapper div {
+    background: none !important;
+}
+
+.duocolumn-wrapper .right-duocolumn {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.duocolumn-wrapper .right-duocolumn .right-duocolumn-wrapper{
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 27.5rem ;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 8vw 1rem 0;
+}
+
+.duocolumn-wrapper .left-duocolumn .left-duocolumn-wrapper{
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 27.5rem ;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 8vw;
+    position: relative;
+}
+
+.duocolumn-wrapper .left-duocolumn {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.left-duocolumn-wrapper__top, .left-duocolumn-wrapper__bottom {
+    margin-bottom: 2rem;
+}
+.right-duocolumn__text {
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-align: right;
+    padding: 1rem 0.5rem;
+    margin: 0;
+}
+
+.right-duocolumn__children {
+    height: 8rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: .1rem solid rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.left-duocolumn__text {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    text-align: justify;
+}
+
+.duocolumn-contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all .3s ease-in-out;
+}
+
+.duocolumn-contact-wrapper .duocolumn-contact-wrapper__item {
+    margin-left: 1rem;
+    color: chocolate;
+    font-size: 1.3rem;
+    letter-spacing: .05rem;
+    text-decoration: none;
+    position: relative;
+}
+.duocolumn-contact-wrapper:hover .duocolumn-contact-wrapper__item {
+    transition: all .3s ease-in-out;
+    color: white;
+    transform: translateY(-.4rem);
+}
+.duocolumn-contact-wrapper svg {
+    font-size: 2.5rem;
+    color: white;
+}
+.duocolumn-contact-wrapper:hover svg {
+    color: chocolate !important;
+    stroke:rgb(71, 36, 10);
+    stroke-width: 10;
+    transition: all .3s ease-in-out;
+}
+.duocolumn-contact-wrapper .duocolumn-contact-wrapper__item::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: white;
+    height: .05rem;
+    width: 100%;
+}
+.duocolumn-contact-wrapper:hover .duocolumn-contact-wrapper__item::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: white;
+    height: .1rem;
+    width: 100%;
+    animation: linescratch .2s linear forwards;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes linescratch {
+    from {height: .1rem;}
+    to {height: .5rem;}
+}
+
+
+
+@media (max-width: 49.9rem) {
+    .duocolumn-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .duocolumn-wrapper .left-duocolumn {
+        width: 100vw;
+        height: auto;
+    }
+    .duocolumn-wrapper .right-duocolumn {
+        width: 100vw;
+        height: auto;
+    }
+    .duocolumn-contact-wrapper {
+        margin: 0;
+    }
+    .duocolumn-wrapper .right-duocolumn .right-duocolumn-wrapper{
+        margin: auto auto 8rem auto;
+        width: 85vw;
+        padding: 0rem 1rem 3rem 1rem;
+    }
+    .right-duocolumn__text {
+        letter-spacing: .15rem;
+        line-height: 1.2rem;
+        font-size: .9rem;
+        text-align: left;
+        font-family: 'Geomanist';
+    }
+    .duocolumn-wrapper .left-duocolumn .left-duocolumn-wrapper{
+        margin: auto;
+        width: 85vw;
+    }
+    .left-duocolumn__text {
+        width: auto;
+        margin: 1rem;
+        padding: 0.5rem 0rem;
+        letter-spacing: .15rem;
+        line-height: 1.2rem;
+        font-size: .9rem;
+        font-family: 'Geomanist';
+    }
+
+    .duocolumn-contact-wrapper{
+        align-items: center;
+        transform: none;
+    }
+    .duocolumn-contact-wrapper .duocolumn-contact-wrapper__item {
+        font-size: 1.05rem;
+
+    }
+    .duocolumn-contact-wrapper svg {
+        font-size: 2rem;
+        color: white;
+        margin-left: 1rem;
+    }
+}

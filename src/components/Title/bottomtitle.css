@@ -1,0 +1,40 @@
+.bottom-title h2 {
+    color: white;
+    font-size: 1.33rem;
+    font-family: "Geomanist";
+    width: 27.5rem;
+    letter-spacing: .13rem;
+    font-style: italic;
+    text-align: left;
+    margin-top: 5rem;
+    margin-left: 8vw;
+    margin-bottom: 0;
+    padding: 0;
+    text-shadow: 0 2px 7px black;
+}
+
+@media screen and (max-width: 30rem) {
+    .bottom-title{
+        margin-top: 5rem;
+        margin-left: 1.5rem;
+        padding: 0;
+        width: auto;
+    }
+    .bottom-title h2 {
+        margin: 0 !important;
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-height: 30rem) {
+    .bottom-title{
+        margin-top: 7rem;
+        margin-left: 8vw;
+    }
+    .bottom-title h2 {
+        margin: 0 !important;
+        text-align: left;
+    }
+}

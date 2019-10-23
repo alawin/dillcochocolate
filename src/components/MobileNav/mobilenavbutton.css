@@ -1,0 +1,41 @@
+.mobilenav-button {
+    background: transparent;
+    border: none;
+    width: 3.8rem;
+    height: 1.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    margin: 0 1rem;
+    z-index: 10;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.navbar.false .mobilenav-button {
+    margin-top: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.mobilenav-button:focus {
+    outline: none;
+}
+
+.mobilenav-button__line {
+    width: 2rem;
+    height: .125rem;
+    background: white;
+    box-shadow: 0 2px 2px black;
+    z-index: 100;
+}
+
+.mobilenav-button__line:nth-child(1) {
+    width: 70%;
+}
+
+@media (min-width: 75rem) {
+    .mobilenav-button{
+        display: none;
+    }
+}

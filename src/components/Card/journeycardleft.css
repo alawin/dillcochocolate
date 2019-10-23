@@ -1,0 +1,103 @@
+.journey-card-left {
+    width: 33rem;
+    height: auto;
+    position: relative;
+    color: white;
+}
+.journey-card-left h2 {
+    margin-left: 7.5rem;
+    transform: translateY(2.7rem);
+    z-index: 2;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px black;
+    font-family: Geomanist;
+    letter-spacing: .13rem;
+    position: relative;
+}
+
+.journey-card-left .journey-card-innerwrapper {
+    background: rgba(0, 0, 0, 0.473);
+    position: relative;
+    width: 24rem;
+    height: 22rem;
+}
+.journey-card-left .journey-card-wrapper {
+    display: flex;
+    position: relative;
+}
+.journey-card-left .journey-card-wrapper .LazyLoad.is-visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.journey-card-left .journey-card-wrapper .LazyLoad.is-visible img {
+    position: relative;
+    width: 7rem;
+    height: auto;
+    padding: .5rem;
+}
+.journey-card-left .journey-card-wrapper--year {
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.2rem;
+}
+
+.journey-card-left .journey-card-wrapper--text {
+    text-align: justify;
+    margin: 0 1rem;
+    text-shadow: 2px 2px 3px black;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.35rem
+}
+
+@media screen and (max-width: 30rem) {
+    .journey-card-left {
+        width: 99vw;
+        margin: 0;
+    }
+    .journey-card-left h2 {
+        font-size: 1.5rem;
+        margin-left: 7rem;
+        transform: translateY(2rem);
+    }
+    .journey-card-left .journey-card-innerwrapper {
+        height: auto !important;
+    }
+    .journey-card-left .journey-card-wrapper {
+        margin: auto;
+        height: auto !important;
+        padding:0;
+        align-items: center;
+    }
+    .journey-card-left .journey-card-wrapper .LazyLoad.is-visible img {
+        width: 6rem;
+        height: auto;
+        position: relative;
+    }
+    .journey-card-left .journey-card-innerwrapper {
+        height: 20rem;
+    }
+    .journey-card-left .journey-card-wrapper--text {
+        margin: 2rem 1rem;
+        font-size: .9rem;
+        opacity: .75;
+        line-height: 1.2rem;
+        letter-spacing: .03rem;
+    }
+    .journey-card-left .journey-card-wrapper--year {
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (min-width: 100rem) {
+    .journey-card-left {
+        width: 33vw;
+    }
+}

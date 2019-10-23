@@ -1,0 +1,41 @@
+.normal-title{
+    width: 27.5rem;
+    margin-right: 8vw ;
+    padding: 1rem;
+}
+.normal-title h2 {
+    color: white;
+    font-size: 3.9rem;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    font-weight: bolder;
+    font-family: Geomanist;
+    letter-spacing: .2rem;
+    text-shadow: 0 2px 7px black;
+}
+
+@media screen and (max-width: 49.9rem) {
+    .normal-title{
+        margin: 6rem 1rem 3rem 1rem;
+        padding: 0;
+        width: auto;
+        align-self: flex-start;
+    }
+    .normal-title h2 {
+        font-size: 3rem;
+        text-align: left;
+    }
+}
+@media screen and (max-height: 30rem) {
+    .normal-title{
+        margin: 6rem 1rem 3rem 8vw !important;
+        padding: 0;
+        width: auto;
+        align-self: flex-start;
+    }
+    .normal-title h2 {
+        text-align: left;
+    }
+}
+
