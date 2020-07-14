@@ -42,6 +42,16 @@ body {
   overflow-x: hidden;
 }
 
+.h8 {
+  position: relative;
+  font-family: "Futura";
+  Width: 100vw;
+  Height: auto;
+  Font-size: 0.7rem;
+  Text-align: center;
+  Margin: auto;
+  color:azure;
+}
 @media screen and (max-width: 30rem) {
   body, html  {
     font-size: 1rem;

@@ -17,7 +17,7 @@ export default class Journey extends Component {
             <div className="journey">
                 <div className="journey-title"><h2>Journey</h2></div>
                 <QuestionCard
-                    tag = "How to know when the cacao pod is fully riped?"
+                    tag = "How to know when the cocoa pod is fully riped?"
                     textAlign = "right"
                     alignSelf= "flex-end"
                     text= "The pod starts out green and tuns orange when they're ripe. When the Pods are ripe, harvesters travel through the cocoa orchards with machetes and hack the pods gently off of the trees."
