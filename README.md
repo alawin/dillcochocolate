@@ -2,16 +2,20 @@
 
 A simple portfolio website repo for testing. something you should know
 
+Developer : Rickz Musto, Jivan Alawin, M. Akbar Bernovaldy
+
 <a href="http://rickzmusto.github.io/dillco" rel="nofollow">Live Example</a>
 
 # How to properly use git.
-create and checkout to your own branch. (NOT MASTER) git checkout -b "yourname/functionname"
-develop your things
-git add . on root folder
-git status to check your changes
-git commit -m "your message here" to commit you works
-git push orign <branchName> (NOT MASTER)
-check the result, and create pull request to merge to master
+
+1. create and checkout to your own branch. (NOT MASTER) git checkout -b "yourname/functionname"
+2. develop your things
+3. git add . on root folder
+4. git status to check your changes
+5. git commit -m "your message here" to commit you works
+6. git push orign <branchName> (NOT MASTER)
+7. check the result by clicking the new link from the terminal, and create pull request to merge to master
+contact me if you need anything.
 
 ## ver 1.96
 - New products pics on the way.
