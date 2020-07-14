@@ -17,7 +17,7 @@ export default class DuoColumn extends Component {
                             <div className='duocolumn-contact-wrapper'>
                                 <FaWhatsapp/>
                                 <a
-                                    href="https://bit.ly/2KDaPqI"
+                                    href="https://bit.ly/3arYY8i"
                                     target='_blank'
                                     rel="noopener noreferrer"
                                     className="duocolumn-contact-wrapper__item">

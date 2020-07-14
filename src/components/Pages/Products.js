@@ -5,10 +5,10 @@ import ProductCard from '../Card/ProductCard';
 import './products.css';
 
 // images
-import srawana from "../../images/Products/srawana.webp"
-import kamarasa from '../../images/Products/kamarasa.webp'
-import andalas from '../../images/Products/andalas.webp'
-import celebes from '../../images/Products/celebes.webp'
+import srawana from "../../images/Products/srawana.jpg"
+import kamarasa from '../../images/Products/kamarasa.jpg'
+import andalas from '../../images/Products/andalas.jpg'
+import celebes from '../../images/Products/celebes.jpg'
 
 // background art
 import java from '../../images/Products/Java.webp'
@@ -103,7 +103,7 @@ export default class Products extends Component {
                     <NormalTitle text='Products'/>
                     <QuestionCard
                             tag='What is the taste of cocoa nibs?'
-                            text='These have a nutty taste with a bitter aftertaste and the same floral taste found in the pulp but stronger. Very fine cacao varieties have low bitterness levels and one can also taste the chocolate, much like the flavor of unsweetened baking chocolate'
+                            text='These have a nutty taste with a bitter aftertaste and the same floral taste found in the pulp but stronger. Very fine cocoa varieties have low bitterness levels and one can also taste the chocolate, much like the flavor of unsweetened baking chocolate'
                             textAlign= 'right'
                             alignSelf='flex-end'
 

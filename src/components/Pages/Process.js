@@ -21,7 +21,7 @@ export default class Process extends Component {
         return (
             <ProcessColumn
                 mainTitle='Processing'
-                mainText='We believe that good products comes from a good cultivation. Dillco Chocolate always makes sure that our Cocoa beans come from a well-controlled, managed, and prepared source in order to have the best resulting chocolate you could enjoy anywhere'
+                mainText='We believe that good products come from a good cultivation. Dillco Chocolate always makes sure that our Cocoa beans come from a well-controlled, managed, and prepared source in order to have the best resulting chocolate you could enjoy anywhere'
 
                 questionTag='What colors do cocoa pod have?'
                 questionText='Immature cocoa have a variety of colors, but most of it are green, red, and purple. As they mature, their color turns yellow or orange, particularly in the creases'
